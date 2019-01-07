@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<div class="container sep-card-home">
+
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold text-center my-5">Recent posts</h2>
+    <!-- Section description -->
+    
+      <div id="post-list">
+      {% for post in paginator.posts %}  
+      <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-lg-5">
+      
+            <!-- Featured image -->
+            <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+              <img class="img-fluid" src="{{ post.image }}" alt="Sample image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+      
+          </div>
+          <div class="col-lg-7">
+            <a href="{{ post.url }}" class="cat-link">
+              <h6 class="font-weight-bold mb-3 cat-topic"><i class="fa fa-cutlery pr-2"></i>{{post.category}}</h6>
+            </a>
+            <h3 class="font-weight-bold mb-3"><a href="{{ post.url }}" class="post-topic"><strong>{{ post.title }}</strong></a></h3>
+            <p>{{ post.description }}<p>{{ post.date | date_to_long_string  }}</p>
+          </div>
+        </div>
+        <hr class="my-5">
+        {% endfor %}
+      </div>
+    </div>    
+<div class="container page-nav">
+  <div class="d-flex justify-content-between list-post-footer">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous page-buttons">
+        Previous
+      </a>
+    {% endif %}
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next page-buttons">Next</a>
+    {% endif %}   
+    </div>
+  </div>

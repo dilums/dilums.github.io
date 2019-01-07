@@ -1,0 +1,240 @@
+$timeline1: rgba(61, 129, 207, 0.5);
+.sep-card{
+    color: #999;
+    background: url('/images/body-bg.png');
+    padding-top:15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    
+}
+
+.subtopic-head{
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.header-name{
+    font-size: 48px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+.header-title{
+    font-size: 28px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+}
+.header-description{
+    max-width: 800px;
+    margin: 30px auto 10px auto;
+    font-size: 16px;
+}
+
+
+.timeline {
+    border-left: 3px solid $timeline1;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0 30px;
+    margin-left: 280px;
+}
+.timeline .item {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.timeline .item::before {
+    content: "";
+    position: absolute;
+    left: -43px;
+    top: 0;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: rgba(192, 191, 191, 0.7);
+    border-radius: 50%;
+    border: 3px solid $timeline1;
+}
+.timeline .work-place {
+    position: relative;
+}
+.timeline .place {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.timeline .location {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    color: #8a8a8a;
+}
+.timeline .job-meta {
+    position: absolute;
+    left: -280px;
+    top: 0;
+}
+.timeline .job-meta .title {
+    font-size: 18px;
+    color: $timeline1;
+    max-width: 220px;
+}
+.timeline .item::after {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 6px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $timeline1;
+    z-index: 10;
+}
+
+.degree-type{
+    font-size: 18px;
+    font-weight: 500;
+}
+.university{
+    font-size: 16px;
+    font-weight: 300;
+}
+.uni-years{
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.degree-desc{
+    font-size: 14px;
+}
+
+.sub-skill-topic{
+    font-size: 18px;
+    text-align: center;
+}
+
+/* cv parts */
+.sk-desc{
+    width: 80%;
+    margin: auto;
+
+}
+svg{
+    /* background: rgba(233, 235, 84, 0.5); */
+    margin: auto;
+}
+.star-lit{
+    color: rgba(219, 236, 67,0.5);
+}
+.skill-container{
+    width: 70%;
+    margin: auto;
+}
+.skill-container span{
+    border: 1px solid #5a5a5a;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+/* isotope */
+.grid-item {
+    padding:0 10px;
+    margin-top: 10px;
+     }
+   .grid{
+       min-height: 600px;
+   }
+   .filter-group{
+       list-style: none;
+   margin: 0 auto;
+       margin-bottom: 0px;
+   margin-bottom: 60px;
+   text-align: center;
+   border-bottom: 1px solid rgba(232, 232, 232,0.2);
+   }
+   .filter{
+       margin-right: 30px;
+   list-style: none;
+   display: inline-block;
+   padding: 8px 15px;
+   color: #8a8a8a;
+   cursor: pointer;
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: 500;
+   }
+   .active-filter{
+       color:rgba(138, 43, 226,0.6);
+       border-bottom: 2px solid rgba(138, 43, 226,0.6);
+   }
+   .project-card{
+       background: rgba(0, 0, 0,0.4);
+   }
+   .project-link{
+       background: transparent;
+   }
+   
+   .project-link a{
+       color: #5a5a5a;
+       text-decoration: none;
+   }
+   .project-link a:hover{
+       text-decoration: none;
+       color: #8a8a8a;
+   }
+   .intro {
+    position: relative;
+    padding: 30px;
+    padding-left: 190px;
+    font-size: 16px;
+    color: #666;
+}
+.profile-image {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 30px;
+}
+@media screen and (max-width: 770px) {
+    .timeline .job-meta {
+        position: static;
+        margin-bottom: 15px;
+    }
+    .timeline {
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .profile-image {
+        position: static;
+        margin: 0 auto;
+            margin-bottom: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .intro {
+        padding: 0;
+        text-align: center;
+    }
+  }
+.p-link{
+    color:rgba(138, 43, 226,0.5);
+
+
+}
+.p-link:hover{
+    color:rgba(138, 43, 226,0.8);
+    text-decoration: none;
+}
+
+.c-link{
+    color:rgba(61, 71, 207, 0.5);
+}
+.c-link:hover{
+    text-decoration: none;
+}
