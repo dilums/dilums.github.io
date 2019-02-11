@@ -1,0 +1,48 @@
+.contact{
+  padding-top: 10rem;
+}
+.contact .btn-green{
+  background: #7cb342;
+  transition: opacity 0.3s ease;
+}
+.contact .btn-green:hover{
+  opacity: 0.8;
+}
+.contact .block{
+  background: #212121;
+  padding: 2.5rem 0;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  color: #fff;
+}
+.block .item{
+  position: relative;
+}
+
+@media (min-width: 992px){
+  .block .sep-vertical:after {
+    content: "";
+    background: rgba(117,117,117,.3);
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+.contact .icon{
+  fill: #7cb342;
+  margin-bottom: 0.5rem;
+  color: #7cb342;
+}
+.contact .contact-type{
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+.contact .contact-text{
+  color: #ddd;
+  font-size: 12px;
+  letter-spacing: .5px;
+}

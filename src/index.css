@@ -1,0 +1,21 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #232323;
+}
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section-heading{
+  font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    color: #212121
+}
+/* main{
+  min-height: 80vh;
+} */
+a:hover{
+  text-decoration: none;
+}

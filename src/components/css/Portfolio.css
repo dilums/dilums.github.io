@@ -1,0 +1,82 @@
+.portfolio .item{
+  position: relative;
+  overflow: hidden;
+  background: rgb(2, 92, 22);
+}
+.portfolio .item-image{
+  transition: all 0.35s ease;
+  transform: scale(1.1);
+}
+.portfolio .item:hover .item-image{
+  transform: scale(1);
+  opacity: 0.5;
+}
+.portfolio .item-details{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.portfolio .item-details a{
+  margin-left: 1rem;
+}
+.portfolio .item-details h3{
+  transform: translateY(-20px);
+  color: #fff;
+  transition: transform 0.35s;
+}
+
+.portfolio .item:hover .item-details h3{
+  transform: translateY(0);
+}
+
+.portfolio .icons{
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translateY(20px);
+  opacity: 0;
+}
+.portfolio .item:hover .item-details .icons{
+  transform: translateY(0);
+  opacity: 1;
+}
+.portfolio a{
+  fill: #eee;
+  transition: fill 0.4s ease;
+}
+.portfolio a:hover{
+  fill: #7cb342;
+}
+
+.portfolio .item::before, .portfolio .item::after{
+  content: '';
+  position: absolute;
+  top:1.2rem;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  right: 1.2rem;
+  transition: opacity 0.35s, transform 0.35s;
+  opacity: 0;
+  background: none;
+}
+.portfolio .item::before{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: scale(0,1);
+}
+.portfolio .item::after{
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: scale(1,0);
+}
+.item-container:hover .item::before,
+.item-container:hover .item::after
+{
+  opacity: 1;
+  transform: scale(1);
+}
+#portfolio{
+  background:linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('/images/hero.jpg')center/cover fixed no-repeat;
+  min-height: calc(100vh);
+  padding-top: 8rem;
+}

@@ -1,0 +1,119 @@
+nav{
+  text-align:center;
+  position: fixed;
+  width:100%;
+  z-index:999;
+  color: #eee;
+}
+nav a{
+  color: inherit;
+}
+nav a:hover{
+  color: inherit;
+}
+nav .logo{
+
+}
+nav .collapsable{
+  position: absolute;
+  text-align: left;
+  top:100%;
+  left:0;
+  width:100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+ 
+}
+
+nav .collapsable ul{
+  margin:0;
+  padding: 0;
+  list-style:none;
+}
+
+nav .collapsable li{
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav .collapsable a{
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+nav .active{
+  color: #7cb342;
+}
+nav .btn-toggle{
+  position: absolute;
+  top:0;
+  left: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: transparent;
+  border: none;
+  font-size: 25px
+  
+}
+nav .btn-toggle svg{
+  fill: #666;
+}
+nav .btn-toggle:focus{
+  outline: none;
+}
+nav .open{
+  transform: scale(1,1);
+}
+nav .open a{
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+nav .brand{
+  color: #eee;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 2rem;
+}
+nav .brand span{
+  color: #7cb342;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width:800px){
+  nav .btn-toggle{
+    display:none !important;
+  }
+  nav{
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  nav .logo{
+    grid-column: 2/3;
+  }
+  nav .collapsable{
+    all: unset;
+    grid-column: 3 /4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav .collapsable a{
+    opacity: 1;
+  }
+  nav .collapsable a:hover{
+    opacity: 0.6;
+  }
+  nav .collapsable ul{
+    display: flex;
+  }
+  nav .collapsable li{
+    margin-bottom: 0;
+  }
+}
+
+
+

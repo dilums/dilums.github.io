@@ -1,0 +1,46 @@
+footer{
+  background: #212121;
+}
+footer p{
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: #757575;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(117,117,117,.2);
+}
+footer .brand{
+  color: #eee;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 2rem;
+}
+footer .brand span{
+  color: #7cb342;
+  font-size: 1.5rem;
+}
+footer .icons{
+  margin-top: 0.5rem;
+}
+footer .icons a{
+  color:#fff;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left:1rem;
+  padding-top: 0.3rem;
+  border-radius: 50%;
+  background: rgba(117,117,117,.1);
+  border: 1px solid rgba(117,117,117,.2);
+}
+footer .icons a{
+  fill: #eee;
+  transition: fill 0.4s ease;
+}
+footer .icons a:hover{
+  fill: #7cb342;
+}
+footer svg{
+  width: 1rem;
+  height: 1rem;
+}

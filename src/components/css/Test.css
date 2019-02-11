@@ -1,0 +1,14 @@
+.test a{
+  background: blue;
+  padding: 3rem;
+  display:inline-block;
+  border-radius: 50%;
+}
+.test i{
+  background: green;
+  padding: 2rem;
+  display:inline-block;
+}
+.test svg{
+  background: yellow;
+}

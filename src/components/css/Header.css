@@ -1,0 +1,47 @@
+header{
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/bg3.jpg')center/cover fixed no-repeat;
+  height: 100vh;
+}
+header .hero-box{
+  height: 100vh;
+}
+header .greeting{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+header .profession{
+  color: #eee;
+font-size: 1.2rem;
+font-weight: 500;
+line-height: 1.2;
+margin-bottom: 20px;
+}
+
+header .icons{
+  margin-top: 0.5rem;
+}
+header .icons a{
+  color:#fff;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left:1rem;
+  padding-top: 0.3rem;
+  border-radius: 50%;
+  background: rgba(117,117,117,.1);
+  border: 1px solid rgba(117,117,117,.2);
+}
+header .icons a{
+  fill: #eee;
+  transition: fill 0.4s ease;
+}
+header .icons a:hover{
+  fill: #7cb342;
+}
+header svg{
+  width: 1rem;
+  height: 1rem;
+}
