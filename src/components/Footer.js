@@ -13,7 +13,7 @@ const Footer = () => {
         <a href="https://twitter.com/DilumSanjaya">{ twitter }</a>
         </div>
       </div>
-      <p className="copyright">Copyright © 2019 Dilum Sanjaya.</p>
+      <p className="copyright">Copyright © 2020 Dilum Sanjaya.</p>
     </div>
   </footer>
   )
